@@ -53,6 +53,7 @@ console.log(areaCircle(`sfkgen`));
 */
 
 
+
 ///////// Корінь квадратний !!
 /*
 function getSqrt(number) {
@@ -87,4 +88,76 @@ getSqrt(number);
 //console.log(getSqrt(` `));
 //console.log(getSqrt(0));
 //console.log(getSqrt(2));
+*/
+
+/*
+let MyMath = {
+	PI: 3.141592653589793,
+
+	pow: function (number, degree) {
+		let result = 1;
+
+		if (Number(number, degree)) {
+		for (let i = 0; i < degree; i++) {
+			result *= number;
+		}
+		return result;
+		}
+
+		else {
+			return `Введіть числа`;
+		}
+	},
+
+	/////////Відобразити числа !
+	abs: function (number) {
+
+		if (Number(number)) {
+			return `${number}`;
+		}
+
+		else {
+			return `Ведіть число`;
+		}
+	},
+
+
+/////////Відобразити мах. число !
+	max: function () {
+		let number = arguments[0];
+
+		if (Number(number)) {
+			for (let i = 1; i < arguments.length; i++) {
+				number = number > arguments[i] ? number : arguments[i];
+			}
+			return number;
+		}
+
+		else {
+			return `Введіть числа`;
+		}
+	},
+
+/////////Відобразити мін. число !
+	min: function () {
+		let number =arguments[0];
+
+		if (Number(number)) {
+			for (let i = 1; i < arguments.length; i++) {
+				number = number < arguments[i] ? number : arguments[i];
+			}
+			return number;
+		}
+
+		else {
+			return `Введіть числа`;
+		}
+	}
+}
+
+console.log(MyMath.PI);
+console.log(MyMath.pow(13,3));
+console.log(MyMath.abs(13));
+console.log(MyMath.max(2,3,-5));
+console.log(MyMath.min(2,3,-5));
 */
